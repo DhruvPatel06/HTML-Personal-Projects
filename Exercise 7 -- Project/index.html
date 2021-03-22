@@ -1,0 +1,141 @@
+<!--
+
+Overview: Dhruv Patel, March 6th, 2021, Quarter 3 CSI Final Project
+
+Purpose: For this project, I've created a website for a company called, Spange. This company focuses upon redefining the normative culture surrouding fashion, and mainstreaming the shoe industry in particular into social reform. This website itself serves the purpose of allowing potential customers to become aware of Spange's mission, view some of the products avilable, purchase a shoe or two, or simply browse around -- in this manner, this wesbite serves as an e-commerce platform should Spange exist in the future.
+
+URL: students.imsa.edu/~dpatel4/
+
+Credit(s):
+	Student: Jesse Park
+	External Resources: To ensure specificity and to ensure I'm properly citing the sources I've used, I've put the links to the websites I used exactly where the corresponding code is located. However generally, the sources primarily include W3Schools and a couple of youtube videos.
+
+Guide:
+	HTML /JavaScript Features + Advanced Concepts:
+	
+	1. Placeholder
+		One of the main places in which I utilized the placeholder element was on the contact page and the Spange Reward registration page
+	2. JavaScipipt
+		I used JavaScript in multiple different places, primarily in directing the logo to index.html and when the button tag was utilized
+	3. Product Card
+		I utilized a product card to better organize the different products I had on my product page -- this can be seen on the product page and the clearance page
+	4. Favicons + Title
+		Favicons and titles are seen on all of the pages on the website
+		
+	These are just some of the HTML/JavaScript features and advanced concepts I used in this website -- more can be seen throughout my code.
+	
+	
+	CSS Features + Advanced Concepts:
+	
+	1. CSS Animation + CSS3 (keyframes, moving images, time delay (positive and negative)
+		In order to see CSS animations and CSS3, there are numerous examples but the most prominent ones are the first "pre-home" page of the changing backgrounds and the moving pictures on the homepage
+	2. Hover (opacity, background color change, etc)
+		One particular example of my use with hovers is seen in my contact & registration form pages where both the submit and reset button use this type of code
+	3. Absolute + Relative
+		I used a mix of absolute and relative positioning in this website -- examples can be seen throughout the website, and one example is the homepage with the moving pictures where some of the pictures or texts are repositioned
+	4. Animation Forwards
+		In order to see this, take a look at the homepage where the moving images stop on their last frame
+	5. Letter-Spacing + Font-Weight
+		To better accentuate the text in certain locations, I utilized different font-weights and letter-spacings -- letter spacing can be seen in the registration button and font weight is seen in the text on the submit button
+	6. Gradients
+		I've used multiple different gradients for this project, and some examples include the background on the navigation bar and the background on the "pre-home" page
+	7. Space Text + Flex
+		The flexbox is a major component of my navigation bar, and using space text and flex allowed my navigation bar to be much more flexible should I change, for example, the dimensions of my logo
+	8. Inline-Block
+		I used inline-block for the navigation bar vs block and this allowed my navigation bar to look more professional and compact
+	
+	As with the HTML/JavaScipt, these are just some of the features and advanced concepts I used that are associated with CSS and CSS3 -- more can be seen throughout my code/website. 
+
+Additional Information: I also decided to learn the fundamentals of JavaScript (which I hadn't known in the past) and have occasionally used the language throughout this project (eg: document.location). Other than that, most of the platform is coded in HTML, CSS, and CSS3.
+
+I hope you enjoy looking through the website I've made!
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Spange: A Social Shoe
+	</title>
+	<!-- appears in the browser toolbar -->
+	
+	<link rel="stylesheet" href="finalstyle.css">
+	<!-- connects this html code to the css code which formats the website -->
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!-- this code allows for the favicon to appear in the browser toolbar -->
+
+</head>
+<body id="background2" action="registerconfo.html">
+	<header id="navheader">
+	<img src="logo.png" id="img2" onClick="document.location='index.html'">
+	<!-- the code above was learned from W3Schools -- here's the exact page I used: https://www.w3schools.com/js/js_window_location.asp -->
+		<nav id="navigation">
+			<ul class="navigation">
+				<li>
+					<a href="index.html">
+					Home
+					</a>
+				</li>
+				
+				<li>
+					<a href="products.html">
+					Products
+					</a>
+				</li>
+				
+				<li>
+					<a href="clearance.html">
+					Clearance
+					</a>
+				</li>
+				
+				<li>
+					<a href="purchase.html">
+					Purchase
+					</a>
+				</li>
+				
+				<li>
+					<a href="contact.html">
+					Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+       
+	<a href="register.html" id="btn">Spange Rewards</a>
+	<!-- all of the code above in terms of the header and the navigation bar were learned from W3 Schools (https://www.w3schools.com/howto/howto_css_responsive_header.asp) and in the following Youtube Video (https://www.youtube.com/watch?v=zH9vCO_zyTQ) --> 
+    </header>
+	
+	<img src="shoegif.gif" id="gif1">
+	<!-- i had attained this gif from the following website:  https://giphy.com/explore/ride-shimano -->
+	<img src="shoegif2.gif" id="gif2">
+	<!-- i had attained this gif from the following website:https://gifer.com/en/LLcs -->
+	<img src="spangetext.png" id="spangetext">
+	<!-- this image is something i had made by myself in powerpoint -->
+	
+	<h3 id="welcome">
+	Welcome To Spange: A Social Shoe! We're a student-led start-up seeking to change how the shoe industry operates. By parterning with large footwear companies and non-profits, we're offering our customers the opportunity to purchase shoes and donate 10% of the total cost of the shoe to a certain movement -- currently, we're focusing on social justice, environmental sustainbility, and plastic pollution. We're offering cutting-edge, sleek footwear, and so if you're intersted in purchasing some new shoes and at the same time, make a difference in this world, check out some of our products!
+	</h3>
+	<!-- the above is a brief introduction to my website so a viewer knows what they're looking at -->
+	
+	<h3 id="mission">
+	Mission Statement: At Spange: A Social Shoe, we envision a future in which the shoe industry takes an active role in addressing societal issues, while continuing to embrace fashion. Spange looks to redefine the traditional norms of fashion, and would love your support in doing so!
+	</h3>
+	<!-- this is Spange's mission statement -->
+
+	
+	<div id="box">
+		<h2 id="disclaimer">
+		<i>
+			<b>
+				Disclaimer: This is not an official business, and is merely done for a school project. No data is recieved and no product will be sent.
+			</b>
+		</i>
+		</h2>
+	<!-- knowing that this was just a school project, it's important to have a disclaimer -- this is what the code above is programming -->
+	</div>
+</body>
+</html>

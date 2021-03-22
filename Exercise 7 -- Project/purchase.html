@@ -1,0 +1,213 @@
+<!-- Dhruv Patel, March 6th, 2021, Quarter 3 CSI Final Project -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Cart + Purchase
+	</title>
+	<!-- appears in the browser toolbar -->
+	
+	<link rel="stylesheet" href="finalstyle.css">
+	<!-- connects this html code to the css code which formats the website -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!-- this code allows for the favicon to appear in the browser toolbar -->
+
+</head>
+<body id="background2">
+	<header id="navheader">
+	<img src="logo.png" id="img2" onClick="document.location='index.html'">
+	<!-- the code above was learned from W3Schools -- here's the exact page I used: https://www.w3schools.com/js/js_window_location.asp -->
+		<nav id="navigation">
+			<ul class="navigation">
+				<li>
+					<a href="index.html">
+					Home
+					</a>
+				</li>
+				
+				<li>
+					<a href="products.html">
+					Products
+					</a>
+				</li>
+				
+				<li>
+					<a href="clearance.html">
+					Clearance
+					</a>
+				</li>
+				
+				<li>
+					<a href="purchase.html">
+					Purchase
+					</a>
+				</li>
+				
+				<li>
+					<a href="contact.html">
+					Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+	
+	<a href="register.html" id="btn">Spange Rewards</a>
+	<!-- all of the code above in terms of the header and the navigation bar were learned from W3 Schools (https://www.w3schools.com/howto/howto_css_responsive_header.asp) and in the following Youtube Video (https://www.youtube.com/watch?v=zH9vCO_zyTQ) --> 
+	</header>
+	
+	<!-- 
+	
+	To create the code shown below, I utilized the following sources to help me:
+	
+	General Form (HTML): https://www.w3schools.com/html/html_forms.asp
+	Alert (JavaScript): https://www.w3schools.com/js/js_window_location.asp 
+	Fieldset (HTML): https://www.w3schools.com/tags/tag_fieldset.asp
+	Legend (HTML):https://www.w3schools.com/tags/tag_legend.asp
+	
+	-->
+	
+	<form action="purchase_page.html" method="post" id="form_purchase" onSubmit="alert('Thank you for purchasing! Spange appreciates your support!');">
+	<br>
+		<fieldset class="fieldset1">
+			<legend> 
+				<b> General Information </b> 
+				<!-- subtitle(first part of purchase) -->
+			</legend>
+			<br>
+				<b> Name (First and Last): </b> <input type="text" name="name" class="firstpart" required autofocus> <br>
+				<!-- textarea with name -->
+				<br>
+				<b> Email: </b> <input type="email" name="email" class="firstpart" required> <br>
+				<!-- email tag with email input -->
+				<br>
+				<b> Address: </b> <input type="text" name="address" class="firstpart" required> <br>
+				<!-- text tag with address input -->
+				<br>
+				<b> Zip Code: </b> <input type="number" name="zipcode" class="firstpart" required> <br>
+				<!-- number tag with zipcode input -->
+				<br>
+		</fieldset>
+		<br>
+		<br>
+		
+		<fieldset class="fieldset1">
+			<legend> 
+				<b> Footwear Information </b> 
+				<!-- subtitle(second part of purchase) -->
+			</legend>
+				<p> 
+					<b> Preferred Shoe Type  </b> 
+				</p>
+					Flat <input type="radio" name="shoetype"><br>
+					Wide <input type="radio" name="shoetype"><br>
+					Medium <input type="radio" name="shoetype"><br>
+					Other <input type="radio" name="shoetype"><br>
+					<!-- options above are all radio inputs meaning they're buttons that a user can select-->
+					<br>
+					
+			<b> Shoe Size </b> <input type="number" name="number" class="firstpart"; required> </b> </br>
+			<br>
+			<b> Do You Frequently Use A Shoe Sole: 
+				<label>
+					<input type="radio" name="yes">
+						Yes
+				</label>
+				
+				<label>
+					<input type="radio" name="no">
+						No
+				</label> 
+				<!-- options above are all radio inputs which allows the user to either select yes or no depending on their answer to the question -->
+				</b>
+				<br>
+			<br>
+			<b> Any Particular Foot-Related Conditions or Concerns?: </b> 
+			<br>
+			<textarea rows="3" cols="50" name="comment" class="firstpart"> </textarea>
+			<!-- textarea tag due to potential larger input -->
+		</fieldset>
+		<br>
+		<br>
+		
+		
+		<fieldset class="fieldset1">
+			<legend> 
+				<b> Shoe Purchase </b> 
+				<!-- subtitle(third part of purchase) -->
+			</legend>
+				<p> 
+					<b> Shoe(s) To Purchase </b> 
+				</p>
+					<select name="shoes" id="shoes" class="firstpart" required multiple>
+						<option value="">Choose</option>
+						<option value="red">Red Revolt</option>
+						<option value="pink">Pink Velvet</option>
+						<option value="rainbow">Rainbow Maxes</option>
+						<option value="vintage">Vintage Royale</option>
+						<option value="tops">Autumn Tops</option>
+						<option value="amp">Camp Amp</option>
+						<option value="air">Air Leather</option>
+						<option value="23">Jordan 23</option>
+						<option value="court">Court Royales</option>
+					<!-- note that for this question, I've added the multiple option which allows the user to select multiple of the options if they want to do such -- all they have to do is click ctrl and then press the shoes they want -->
+					</select>
+		</fieldset>
+		<br>
+		<br>
+		
+		<fieldset class="fieldset1">
+			<legend> 
+				<b> Financial Information </b> 
+				<!-- subtitle(fourth part of purchase) -->
+			</legend>
+				<p> 
+					<b> Credit Card Company  </b> 
+				</p>
+					Visa <input type="radio" name="shoetype"><br>
+					MasterCard <input type="radio" name="insurance"><br>
+					Chase <input type="radio" name="insurance"><br>
+					Other <input type="radio" name="insurance"><br>
+					<!-- options above are all radio inputs meaning they're buttons that a user can select-->
+					<br>
+				
+				<p> 
+					<b> Utilization of Funds  </b> 
+				</p>
+					Racial Equity <input type="radio" name="shoetype"><br>
+					Environmental Sustainbility <input type="radio" name="insurance"><br>
+					Plastic Pollution <input type="radio" name="insurance"><br>
+					<!-- options above are all radio inputs meaning they're buttons that a user can select-->
+					<br>
+					
+			<b> Credit Card Number </b> <input type="number" name="number" class="firstpart"; required><br>
+			<br>
+			
+			<b> CVV </b> <input type="number" name="number" class="firstpart"; required><br>
+			<br>
+			
+			<b> Expiration Date </b> <input type="date" name="date" class="firstpart"; required><br>
+			<br>
+			
+		</fieldset>
+		<br>
+		<br>
+		
+		<fieldset class="fieldset1">
+			<legend> 
+				<b> Additional Information </b> 
+				<!-- subtitle(fifth part of purchase) -->
+			</legend>
+				<textarea rows="3" cols="50" name="comment" class="firstpart"> </textarea>
+		</fieldset>
+		<br>
+		<br>
+		
+		<input type="reset" value="Reset" class="submitreset">
+		<!-- resets all inputs -->
+		<input type="submit" class="submitreset">
+		<!-- submits information entered above -->
+	</form>
+	
+</body>
+</html>

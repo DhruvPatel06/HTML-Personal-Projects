@@ -1,0 +1,79 @@
+<!-- Dhruv Patel, March 6th, 2021, Quarter 3 CSI Final Project -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Contact
+	</title>
+	<!-- appears in the browser toolbar -->
+	
+	<link rel="stylesheet" href="finalstyle.css">
+	<!-- connects this html code to the css code which formats the website -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!-- this code allows for the favicon to appear in the browser toolbar -->
+
+</head>
+<body id="register">
+	<header id="navheader2">
+	<img src="logo.png" id="img2" onClick="document.location='index.html'">
+	<!-- the code above was learned from W3Schools -- here's the exact page I used: https://www.w3schools.com/js/js_window_location.asp -->
+		<nav id="navigation">
+			<ul class="navigation">
+				<li>
+					<a href="index.html">
+					Home
+					</a>
+				</li>
+				
+				<li>
+					<a href="products.html">
+					Products
+					</a>
+				</li>
+				
+				<li>
+					<a href="clearance.html">
+					Clearance
+					</a>
+				</li>
+				
+				<li>
+					<a href="purchase.html">
+					Purchase
+					</a>
+				</li>
+				
+				<li>
+					<a href="contact.html">
+					Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+	
+	<a href="register.html" id="btn">Spange Rewards</a>
+	<!-- all of the code above in terms of the header and the navigation bar were learned from W3 Schools (https://www.w3schools.com/howto/howto_css_responsive_header.asp) and in the following Youtube Video (https://www.youtube.com/watch?v=zH9vCO_zyTQ) --> 
+	</header>
+	<h1 id="register2">
+	 Contact Form
+	</h1>
+	
+	<form id="contact_form" action="contactconfo.html">
+		<input name="name" type="text" id="form" placeholder="My Name Is" required autofocus>
+		<!-- this is a text input asking for user name, i've also added a placeholder and have made the question required. This input is also under an autofocus -->
+		<input name="email" type="text" id="form" placeholder="My Email Is" required>
+		<!-- this is a text input asking for user email, i've also added a placeholder and have made the question required. -->
+		<textarea name="text" id="form2" placeholder="My Comment Is" required></textarea>
+
+		<input type="submit" id="submit">
+		<!-- this is a submit button that allows the form to be recorded and the page to be changed to the registration confirmation page -->
+		<input type="reset" id="reset">
+		<!-- this is a reset button that allows the form to be reset and all the user entries to be wiped -->
+		
+		<!-- the sources that I used to help me create this form are the following: https://www.w3schools.com/html/html_forms.asp 
+		https://codepen.io/ZachSaucier/pen/AIJpe?editors=1100
+		-->
+</head>
+</body>
+</html>

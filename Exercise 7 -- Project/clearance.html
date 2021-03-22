@@ -1,0 +1,131 @@
+<!-- Dhruv Patel, March 6th, 2021, Quarter 3 CSI Final Project -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Clearance
+	</title>
+	<!-- appears in the browser toolbar -->
+	
+	<link rel="stylesheet" href="finalstyle.css">
+	<!-- connects this html code to the css code which formats the website -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!-- this code allows for the favicon to appear in the browser toolbar -->
+
+</head>
+<body id="background2">
+	<header id="navheader">
+	<img src="logo.png" id="img2" onClick="document.location='index.html'">
+	<!-- the code above was learned from W3Schools -- here's the exact page I used: https://www.w3schools.com/js/js_window_location.asp -->
+		<nav id="navigation">
+			<ul class="navigation">
+				<li>
+					<a href="index.html">
+					Home
+					</a>
+				</li>
+				
+				<li>
+					<a href="products.html">
+					Products
+					</a>
+				</li>
+				
+				<li>
+					<a href="clearance.html">
+					Clearance
+					</a>
+				</li>
+				
+				<li>
+					<a href="purchase.html">
+					Purchase
+					</a>
+				</li>
+				
+				<li>
+					<a href="contact.html">
+					Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+	
+	<a href="register.html" id="btn">Spange Rewards</a>
+	<!-- all of the code above in terms of the header and the navigation bar were learned from W3 Schools (https://www.w3schools.com/howto/howto_css_responsive_header.asp) and in the following Youtube Video (https://www.youtube.com/watch?v=zH9vCO_zyTQ) --> 
+	</header>
+	
+	<!--
+	
+	For the code seen below, I utilized the following sources to help me:
+	
+	Product Card (HTML): https://www.w3schools.com/howto/howto_css_product_card.asp
+	Button "Go Back" (JavaScript): https://www.w3schools.com/js/js_window_location.asp 
+	Scratch Out (HTML): https://www.w3schools.com/tags/tag_del.asp
+	
+	The code below creates the product card seen on the product page -- it shows a picture of the shoe, the name of the shoe, and a brief decription. I've also added a button that links to the purchase page 
+	
+	-->
+	
+	<div id="product">
+		<img src="product7.jpg" alt="shoe 7" id="productp">
+			<h1>
+			Air Leather
+			</h1>
+			
+			<p class="price_product">
+				<del id="scratchout"> $21.99 </del>
+				$10.99
+			</p>
+			
+			<p class="product_text">
+			Although a little creased, these pure leather shoes will definitely augment your morning look!
+			</p>
+			
+			<button class="button" onClick="document.location='purchase.html'"> 
+			Add To Cart 
+			</button>
+	</div>
+	
+	<div id="product">
+		<img src="product8.jpg" alt="shoe 8" id="productp">
+			<h1>
+			Jordan 23			
+			</h1>
+			
+			<p class="price_product">
+				<del id="scratchout"> $67.99 </del>
+				$32.99
+			</p>
+			
+			<p class="product_text">
+			Initially priced at 67.99, we've reduced the cost of this shoe to merely 32.99! One time offer!
+			</p>
+			
+			<button class="button" onClick="document.location='purchase.html'"> 
+			Add To Cart 
+			</button>
+	</div>
+	
+	<div id="product">
+		<img src="product9.jpg" alt="shoe 9" id="productp">
+			<h1>
+			Court Royales
+			</h1>
+			
+			<p class="price_product">
+				<del id="scratchout"> $99.99 </del>
+				$79.99
+			</p>
+			
+			<p class="product_text">
+			Like to watch or play basketball? Grab these shoes -- Lebron James wore them once!			
+			</p>
+			
+			<button class="button" onClick="document.location='purchase.html'"> 
+			Add To Cart 
+			</button>
+	</div>
+</body>
+</html>
