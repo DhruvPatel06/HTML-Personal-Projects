@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	Patel Orthodontics	
+	</title>
+	<!-- appears in the browser toolbar -->
+
+	<link rel="icon" href="tooth.ico" type="image/x-icon">
+	<!-- code that allows for fist to show up as favicon -->
+</head>
+<body style="background-color: #8EE4AF;">
+	<h1 style="font-family: Courier New; text-align: center; color: #05386B; border: 4px solid black;">
+	Patel Orthodontics Dental Appointment 
+	<!-- heading off page -->
+	</h1>
+
+
+	<form action="response_page.html" method="post" style="font-family: Garamond;text-align:center;" onSubmit="alert('Thank you for booking an appointment! Patel Orthodontics appreciates your support!');">
+	<br>
+		<fieldset style="margin-right: 15px; margin-left: 15px; border: 5px solid #05386B;">
+			<legend> 
+				<b> General Information </b> 
+				<!-- subtitle(first part of appointment booking) -->
+			</legend>
+			<br>
+				<b> Name (First and Last): </b> <input type="text" name="name" style="border-radius: 7px;" required autofocus> <br>
+				<!-- textarea with name -->
+				<br>
+				<b> Email: </b> <input type="email" name="email" style="border-radius: 7px;" required> <br>
+				<!-- email tag with email input -->
+				<br>
+				<b> Appointment Day: </b> <input type="date" name="day" style="border-radius: 7px;" required> <br>
+				<!-- date tag with day input -->
+				<br>
+				<b> Appointment Time: </b> <input type="time" name="time" style="border-radius: 7px;" required> <br>
+				<!-- time tag with time input -->
+				<br>
+		</fieldset>
+		<br>
+		<br>
+		
+		<fieldset style="margin-right: 15px; margin-left: 15px; border: 5px solid #05386B;">
+			<legend> 
+				<b> Financial Information </b> 
+				<!-- subtitle(second part of appointment booking) -->
+			</legend>
+				<p> 
+					<b> Insurance Provider </b> 
+				</p>
+					Aetna <input type="radio" name="insurance"><br>
+					Meridian <input type="radio" name="insurance"><br>
+					Employer <input type="radio" name="insurance"><br>
+					Other <input type="radio" name="insurance"><br>
+					<!-- options above are all radio inputs meaning they're buttons that a user can select-->
+					<br>
+					
+			<b> Expected Payment ($): </b> <input type="number" name="number" style="border-radius: 7px;" required><br>
+			<br>
+			<b> Insurance Pin (4 Digit): </b> <input type="number" name="number" style="border-radius: 7px;"><br>
+			<br>
+			<!-- number tag with number input (not required) -->
+			<b> List Any Financial Issues: </b> 
+			<br>
+			<textarea rows="3" cols="50" name="comment" style="text-align: center;border-radius: 7px;"> </textarea>
+			<!-- textarea tag due to potential larger input -->
+		</fieldset>
+		<br>
+		<br>
+		
+		
+		<fieldset style="margin-right: 15px; margin-left: 15px; border: 5px solid #05386B;">
+			<legend> 
+				<b> Dentist </b> 
+				<!-- subtitle(third part of appointment booking) -->
+			</legend>
+				<p> 
+					<b> Preferred Dentist </b> 
+				</p>
+					<select name="cars" id="cars" style="font-family: Garmond;border-radius: 7px;" required>
+						<option value="">Choose</option>
+						<option value="kevin">Kevin Mccalister</option>
+						<option value="babe ruth">Babe Ruth</option>
+						<option value="jimmy">Jimmy Butler</option>
+						<option value="david">David Smith</option>
+					</select>
+		</fieldset>
+		<br>
+		<br>
+		
+		<fieldset style="margin-right: 15px; margin-left: 15px; border: 5px solid #05386B;">
+			<legend> 
+				<b> Additional Information </b> 
+				<!-- subtitle(fourth part of appointment booking) -->
+			</legend>
+				<textarea rows="3" cols="50" name="comment" style="text-align: center;border-radius: 7px;"> </textarea>
+		</fieldset>
+		<br>
+		<br>
+		
+		<input type="reset" value="Reset" style="font-family: Garamond;width:70px;height:40px;border-radius:7px;">
+		<!-- resets all inputs -->
+		<input type="submit" style="font-family: Garamond;width:70px;height:40px;border-radius:7px;">
+		<!-- submits information entered above -->
+	</form>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Dhruv's Coffee Shop
+	</title>
+	<!-- appears in the browser toolbar -->
+
+	<!-- appears in the browser toolbar -->
+	<link rel="icon" href="bean.ico" type="image/x-icon">
+		<!-- code that allows for bean to show up as favicon -->
+	<style>
+		body {margin: 0; 
+		padding: 0;
+		background-color: yellow;}
+		#one {width: 100%; 
+		height: 100px;
+		background-color: lightblue;
+		margin-top: 50px;
+		overflow: auto;
+		}
+		#two {width: 100%; 
+		height: 150px;
+		background-color: violet;
+		margin-top: 50px;
+		overflow: auto;
+		}
+		#four {width: 50%; 
+		height: 150px;
+		background-color: darkgrey;
+		margin-top: 50px;
+		float: left;
+		overflow: auto;
+		}
+		#five {width: 50%; 
+		height: 150px;
+		background-color: darkorange;
+		margin-top: 50px;
+		float: left;
+		overflow: auto;
+		}
+		
+		.piccenter {
+		text-align: center
+		}
+	</style>
+</head>
+<body>
+	<div id="one">
+		<h1 style="font-family: Courier New; color: blue; text-align: center;">
+			Welcome To Dhruv's Coffee Shop!
+		</h1>
+		
+		<p style = "font-family: Courier New; color: purple; text-align: center;">
+			<i>
+			Dhruv's Coffee Shop seeks to offer its customers quality, pristine coffee -- our coffee beans are 100% recyclable and thus, our business priortizes environmental sustainibility!
+			</i>
+		</p>
+	</div>
+
+	<div id="two">
+			<form action="response_page.html" method="post" style="font-family: Garamond;text-align:center;">
+		<br>
+			<fieldset style="margin-right: 15px; margin-left: 15px; border: 5px solid #05386B;">
+				<legend> 
+					<b> General Information </b> 
+					<!-- subtitle(first part of appointment booking) -->
+				</legend>
+				<br>
+					<b> Name (First): </b> <input type="text" name="first_name" style="border-radius: 7px;" required autofocus> <br>
+					<!-- textbox with first name -->
+					<br>
+					<b> Name (Last): </b> <input type="text" name="last_name" style="border-radius: 7px;" required autofocus> <br>
+					<!-- textbox with last name -->
+					<br>
+					<b> Email: </b> <input type="email" name="email" style="border-radius: 7px;" required> <br>
+					<!-- email tag with email input -->
+					<br>
+			</fieldset>
+			<br>
+			<br>
+			
+			<fieldset style="margin-right: 15px; margin-left: 15px; border: 5px solid #05386B;">
+				<legend> 
+					<b> Specific Information </b> 
+					<!-- subtitle(second part of appointment booking) -->
+				</legend>
+					<p> 
+						<b> Type Of Cofffe </b> 
+					</p>
+						Regular <input type="radio" name="insurance"><br>
+						Decaffeineated <input type="radio" name="insurance"><br>
+						<!-- options above are all radio inputs meaning they're buttons that a user can select-->
+						<br>
+						
+				<b> Quantity (In Pounds): </b> <input type="number" name="number" style="border-radius: 7px;" required><br>
+				<br>
+				<b> List Any Specific Details: </b> 
+				<br>
+					<textarea rows="3" cols="50" name="comment" style="text-align: center;border-radius: 7px;"> </textarea>
+					<!-- textarea tag due to potential larger input -->
+			</fieldset>
+			<br>
+			<br>
+
+			<fieldset style="margin-right: 15px; margin-left: 15px; border: 5px solid #05386B;">
+				<legend> 
+					<b> Coffee Bean </b> 
+					<!-- subtitle(third part of appointment booking) -->
+				</legend>
+					<p> 
+						<b> Preferred Type of Coffeee Bean </b> 
+					</p>
+						<select name="cars" id="cars" style="font-family: Garmond;border-radius: 7px;" required>
+							<option value="">Choose</option>
+							<option value="Arabica">Arabica</option>
+							<option value="Robusta">Robusta</option>
+							<option value="Liberica">Liberica</option>
+							<option value="Excelsa">Excelsa</option>
+						</select>
+			</fieldset>
+			<br>
+			<br>
+			
+			<fieldset style="margin-right: 15px; margin-left: 15px; border: 5px solid #05386B;">
+				<legend> 
+					<b> Any Additional Information </b> 
+					<!-- subtitle(fourth part of appointment booking) -->
+				</legend>
+					<textarea rows="3" cols="50" name="comment" style="text-align: center;border-radius: 7px;"> </textarea>
+			</fieldset>
+			<br>
+			<br>
+			
+			<input type="reset" value="Reset" style="font-family: Garamond;width:70px;height:40px;border-radius:7px;">
+			<!-- resets all inputs -->
+			<input type="submit" style="font-family: Garamond;width:70px;height:40px;border-radius:7px;">
+			<!-- submits information entered above -->
+		</form>
+	</div>
+	
+	<div id="three">
+		<div id="four">
+			<h2 style="font-family: Courier New; margin-left: 4px; color: darkred;text-align:center;">
+				What Are The Two Main Types of Coffee?
+			</h2>
+			
+			<ol style="border: 4px solid black;font-family: Courier New;">
+				<li style="margin-top:15px;">
+					<b> Mocha: </b> A Mocha is a basically a latte with chocolate -- interested in trying this out? Write this in the additional information section!
+				<br/><br/>
+				</li>
+				<li style="margin-bottom:15px;">
+					<b> Cappucino: </b> A cappucino is an "espresso-based" type of coffee that includes "milk foam"
+				</li>
+				<li style="margin-bottom:15px;">
+					<b> Macchiato: </b> A macchiato is a type of coffee with a balance of espresso and warm, steamed milk
+				</li>
+			</ol>
+		</div>
+		
+		<div id="five" class="piccenter">
+			<img src="my_flower.jpg" alt="picture of flower" width="50%">
+			<h3 style="font-family: Courier New;text-align:center;">
+				That's a really pretty flower! We also offer coffee decorations with flowers, whipping cream, and many different ornaments!
+			</h3>
+		</div>
+	</div>
+
+	<!-- code that causes animation from right to left (researched this at https://www.html.am/html-codes/marquees/html-slide-in-text.cfm) -->
+	<marquee behavior="slide" direction="left" style="font-family: Courier New;margin-top: 15px;">
+		Dhruv's Coffee Shop seeks to offer its customers quality, pristine coffee -- our coffee beans are 100% recyclable and thus, our business priortizes environmental sustainibility!
+	</marquee>
+</body>
+</html>

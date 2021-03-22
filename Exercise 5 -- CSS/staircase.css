@@ -1,0 +1,114 @@
+/* Dhruv Patel, 2/10/2021, CSS code for website showing staircase to mount everest peak */
+
+body {
+	background-color: powderblue;
+}
+
+/* code above is responsible for providing the background on the page */
+
+#heading {
+	font-family: Courier New;
+	border: 5px solid black;
+	text-align: center;
+	background-color: plum;
+	animation-name: title;
+	animation-duration: 15s;
+	border-radius: 10px;
+	animation-iteration-count: 6;
+}
+
+@keyframes title {
+	0%   {background-color: plum;}
+	30%  {background-color: mediumaquamarine;}
+	60%  {background-color: lightblue;}
+	100% {background-color: khaki;}	
+}
+
+/* the sections of code above are responsible for formatting the title and providing the color changing effect
+
+	Note: I had learned how to do the color animation effect through the following website: https://www.w3schools.com/css/css3_animations.asp
+*/
+
+
+#one{
+	border: 2px solid plum;
+	font-size:10px;
+	width:100%;
+	text-align:center;
+	font-family: Courier New;
+}
+
+/* code above is responsible for formatting the first step */
+
+#two{
+	border: 2px solid plum;
+	font-size:10px;
+	width:87%;
+	margin-left:13%;
+	text-align:center;
+	font-family: Courier New;
+}
+
+/* code above is responsible for formatting the second step */
+
+#three{
+	border: 2px solid plum;
+	font-size:10px;
+	width:74%;
+	margin-left:26%;
+	text-align:center;
+	font-family: Courier New;
+}
+
+/* code above is responsible for formatting the third step */
+
+#four{
+	border: 2px solid plum;
+	font-size:10px;
+	width:61%;
+	margin-left:39%;
+	text-align:center;
+	font-family: Courier New;
+}
+
+/* code above is responsible for formatting the fourth step */
+
+#five{
+	border: 2px solid plum;
+	font-size:10px;
+	width:48%;
+	margin-left:52%;
+	text-align:center;
+	font-family: Courier New;
+}
+
+/* code above is responsible for formatting the fifth step */
+
+#six{
+	border: 2px solid plum;
+	font-size:10px;
+	width:35%;
+	margin-left:65%;
+	text-align:center;
+	font-family: Courier New;
+}
+
+/* code above is responsible for formatting the sixth step */
+
+#seven{
+	border: 2px solid plum;
+	font-size:10px;
+	width:22%;
+	margin-left:78%;
+	text-align:center;
+	font-family: Courier New;
+}
+
+/* code above is responsible for formatting the seventh step */
+
+#peak{
+	float:right;
+}
+
+/* code above is responsible for formatting the image of mount everest peak */
+
